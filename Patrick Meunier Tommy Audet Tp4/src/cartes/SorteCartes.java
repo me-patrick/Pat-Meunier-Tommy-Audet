@@ -40,7 +40,7 @@ public enum SorteCartes
 	public String toString()
 	{
 		// TODO Auto-generated method stub
-		return getSymbole() + "";
+		return getSymbole() + " ";
 	}
 	
 	//test
