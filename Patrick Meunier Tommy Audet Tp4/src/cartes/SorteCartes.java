@@ -42,10 +42,10 @@ public enum SorteCartes
 		// TODO Auto-generated method stub
 		return getSymbole() + " ";
 	}
-	
-	//test
-	//test
-	//test
-	//test
-	
+
+	// test
+	// test
+	// test
+	// test
+
 }

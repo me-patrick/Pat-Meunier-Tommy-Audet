@@ -5,10 +5,11 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 import structures.pile.*;
+
 public class PileTest
 {
 	private Pile p;
-	
+
 	@Before
 	public void testPile()
 	{
@@ -45,7 +46,7 @@ public class PileTest
 	{
 		p.empiler("yo");
 		p.empiler("yoo");
-		assertEquals(p.getPremier(),"yoo");
+		assertEquals(p.getPremier(), "yoo");
 		p.depiler();
 		assertEquals(p.getPremier(), "yo");
 	}
@@ -54,7 +55,7 @@ public class PileTest
 	public void testDepiler()
 	{
 		p.empiler("yo");
-		assertEquals(p.depiler(),"yo");
+		assertEquals(p.depiler(), "yo");
 		assertTrue(p.isEmpty());
 	}
 
@@ -80,5 +81,5 @@ public class PileTest
 		p.empiler("un test de");
 		p.empiler("de Stack");
 		assertEquals(p.toString(), "de Stack, un test de, je suis, ");
-	}	
+	}
 }
