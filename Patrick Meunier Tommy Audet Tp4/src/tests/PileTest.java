@@ -5,12 +5,19 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 import structures.pile.*;
-
+/**
+ * test de classe Pile
+ * @author Patrick Meunier
+ *
+ */
 public class PileTest
 {
 	private Pile p;
 
 	@Before
+	/**
+	 * test et création d'une pile pour faire des test
+	 */
 	public void testPile()
 	{
 		p = new Pile();
@@ -18,6 +25,9 @@ public class PileTest
 	}
 
 	@Test
+	/**
+	 * test de isEmpty()
+	 */
 	public void testIsEmpty()
 	{
 		assertTrue(p.isEmpty());
@@ -26,6 +36,9 @@ public class PileTest
 	}
 
 	@Test
+	/**
+	 * test de vider()
+	 */
 	public void testVider()
 	{
 		p.empiler("yo");
@@ -35,6 +48,9 @@ public class PileTest
 	}
 
 	@Test
+	/**
+	 * test de empiler()
+	 */
 	public void testEmpiler()
 	{
 		p.empiler("yo");
@@ -42,6 +58,9 @@ public class PileTest
 	}
 
 	@Test
+	/**
+	 * test de getPremier()
+	 */
 	public void testGetPremier()
 	{
 		p.empiler("yo");
@@ -52,6 +71,9 @@ public class PileTest
 	}
 
 	@Test
+	/**
+	 * test de depiler()
+	 */
 	public void testDepiler()
 	{
 		p.empiler("yo");
@@ -60,6 +82,9 @@ public class PileTest
 	}
 
 	@Test
+	/**
+	 * test de size()
+	 */
 	public void testSize()
 	{
 		p.empiler("yo");
@@ -75,6 +100,9 @@ public class PileTest
 	}
 
 	@Test
+	/**
+	 * test de toString() (Override)
+	 */
 	public void testToString()
 	{
 		p.empiler("je suis");

@@ -9,12 +9,20 @@ import cartes.ValeurCartes;
 import exception.ConstructeurException;
 import org.junit.Test;
 
+/**
+ * Test de la classe Carte
+ * @author Patrick Meunier
+ *
+ */
 public class CarteTest
 {
 
 	private Carte carte1,carte2;
 	
 	@Before
+	/**
+	 * création de deux carte pour faire des test
+	 */
 	public void testCarte() 
 	{
 		carte1 = new Carte(ValeurCartes.V_5,SorteCartes.CARREAU);
@@ -22,6 +30,9 @@ public class CarteTest
 	}
 	
 	@Test
+	/**
+	 * test de getValeur()
+	 */
 	public void testGetValeur()
 	{
 		assertEquals(carte1.getValeur(),ValeurCartes.V_5);
@@ -29,6 +40,9 @@ public class CarteTest
 	}
 
 	@Test
+	/**
+	 * test de getValeurSymbole()
+	 */
 	public void testGetValeurSymbole()
 	{
 		assertEquals(carte1.getValeurSymbole(),"5");
@@ -37,6 +51,9 @@ public class CarteTest
 	}
 
 	@Test
+	/**
+	 * test de getSorte()
+	 */
 	public void testGetSorte()
 	{
 		assertEquals(carte1.getSorte(),SorteCartes.CARREAU);
@@ -44,6 +61,9 @@ public class CarteTest
 	}
 
 	@Test
+	/**
+	 * test getSorteSymbole()
+	 */
 	public void testGetSorteSymbole()
 	{
 		assertEquals(carte1.getSorteSymbole(),SorteCartes.CARREAU.getSymbole());
@@ -51,6 +71,9 @@ public class CarteTest
 	}
 
 	@Test
+	/**
+	 * test de estVisible()
+	 */
 	public void testEstVisible()
 	{
 		carte1.setVisible(true);
@@ -59,6 +82,9 @@ public class CarteTest
 	}
 
 	@Test
+	/**
+	 * test de setVisible()
+	 */
 	public void testSetVisible()
 	{
 		carte1.setVisible(true);
@@ -68,6 +94,9 @@ public class CarteTest
 	}
 
 	@Test
+	/**
+	 * test de toStringCarte()
+	 */
 	public void testToStringCarte()
 	{
 		assertEquals(carte1.toStringCarte(),"☺");
@@ -76,6 +105,9 @@ public class CarteTest
 	}
 
 	@Test
+	/**
+	 * test de equals(Override)
+	 */
 	public void testEqualsObject()
 	{
 		Carte carte3 = new Carte(ValeurCartes.V_5,SorteCartes.CARREAU);
@@ -88,6 +120,9 @@ public class CarteTest
 	}
 
 	@Test
+	/**
+	 * test de compareTo (Override)
+	 */
 	public void testCompareTo()
 	{
 		assertTrue(carte1.compareTo(carte2) < 0);
@@ -101,6 +136,9 @@ public class CarteTest
 	}
 
 	@Test
+	/**
+	 * test de toString() (Override)
+	 */
 	public void testToString()
 	{
 		assertEquals(carte1.toString(),"5 ♦");

@@ -13,13 +13,20 @@ import cartes.PaquetDeCartes;
 import cartes.Pioche;
 import cartes.SorteCartes;
 import cartes.ValeurCartes;
-
+/**
+ * test de la classe Pioche
+ * @author Patrick Meunier
+ *
+ */
 public class PiocheTest
 {
 	PaquetDeCartes paquet2;
 	Pioche pioche1;
 
 	@Before
+	/**
+	 * création de pioche pour faire des test
+	 */
 	public void testPioche()
 	{
 		Carte[] liste1 =
@@ -32,6 +39,9 @@ public class PiocheTest
 	}
 
 	@Test
+	/**
+	 * test du constructeur Pioche()
+	 */
 	public void testPioche1()
 	{
 		String s = "";
@@ -41,6 +51,9 @@ public class PiocheTest
 	}
 
 	@Test
+	/**
+	 * test de piger()
+	 */
 	public void testPiger()
 	{
 		assertEquals(3, pioche1.size());
@@ -50,6 +63,9 @@ public class PiocheTest
 	}
 
 	@Test
+	/**
+	 * test de consulterDesssus()
+	 */
 	public void testConsulterDessus()
 	{
 		assertEquals(3, pioche1.size());
@@ -59,6 +75,9 @@ public class PiocheTest
 	}
 
 	@Test
+	/**
+	 * test de isEmpty()
+	 */
 	public void testIsEmpty()
 	{
 		assertFalse(pioche1.isEmpty());
@@ -71,6 +90,9 @@ public class PiocheTest
 	}
 
 	@Test
+	/**
+	 * test de size()
+	 */
 	public void testSize()
 	{
 		assertEquals(3, pioche1.size());

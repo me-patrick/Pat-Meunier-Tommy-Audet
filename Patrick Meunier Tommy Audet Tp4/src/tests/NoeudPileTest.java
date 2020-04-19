@@ -5,11 +5,19 @@ import org.junit.Before;
 import org.junit.Test;
 import structures.pile.*;
 
+/**
+ * test de la classe NoeudPile
+ * @author Patrick Meunier
+ *
+ */
 public class NoeudPileTest
 {
 	private NoeudPile noeudTest1, noeudTest2;
 
 	@Before
+	/**
+	 * test et création de NoeudPile pour faire des tests
+	 */
 	public void testNoeudPile()
 	{
 		noeudTest1 = new NoeudPile(new Integer(1));
@@ -20,6 +28,9 @@ public class NoeudPileTest
 	}
 
 	@Test
+	/**
+	 * test de getElement()
+	 */
 	public void testGetElement()
 	{
 		System.out.println(noeudTest1.getElement());
@@ -27,6 +38,9 @@ public class NoeudPileTest
 	}
 
 	@Test
+	/**
+	 * test de setElement()
+	 */
 	public void testSetElement()
 	{
 		noeudTest1.setElement("yo");
@@ -35,12 +49,18 @@ public class NoeudPileTest
 	}
 
 	@Test
+	/**
+	 * test de getPrecedent()
+	 */
 	public void testGetPrecedent()
 	{
 		assertEquals(noeudTest2.getPrecedent(), noeudTest1);
 	}
 
 	@Test
+	/**
+	 * test de setPrecedent()
+	 */
 	public void testSetPrecedent()
 	{
 		NoeudPile noeudTest3 = new NoeudPile("yoo");

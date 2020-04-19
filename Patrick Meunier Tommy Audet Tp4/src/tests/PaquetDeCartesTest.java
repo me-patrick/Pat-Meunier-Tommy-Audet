@@ -14,6 +14,11 @@ import cartes.ValeurCartes;
 import exception.ConstructeurException;
 import cartes.Carte;
 
+/**
+ * test de la classe PaquetDeCartes
+ * @author Patrick
+ *
+ */
 public class PaquetDeCartesTest
 {
 
@@ -23,6 +28,9 @@ public class PaquetDeCartesTest
 	PaquetDeCartes paquetTest;
 	
 	@Test
+	/**
+	 * test du constructeur PaquetDeCartes()
+	 */
 	public void testPaquetDeCartes()
 	{
 		// pour le test on regarde le syso pour voir si le syso fait du sense
@@ -40,6 +48,9 @@ public class PaquetDeCartesTest
 	}
 
 	@Before
+	/**
+	 * création de paquet de carte pour faire des tests
+	 */
 	public void testPaquetDeCartesListOfCarte()
 	{
 
@@ -51,6 +62,9 @@ public class PaquetDeCartesTest
 	}
 
 	@Test
+	/**
+	 * test de brasser()
+	 */
 	public void testBrasser()
 	{
 		// pour le test on regarde le syso pour voir si le syso fait du sense
@@ -69,6 +83,9 @@ public class PaquetDeCartesTest
 	}
 
 	@Test
+	/**
+	 * test de consulterCarte()
+	 */
 	public void testConsulterCarte()
 	{
 		assertTrue(new Carte(ValeurCartes.V_10,SorteCartes.COEUR).compareTo(paquet2.consulterCarte(1)) == 0);
@@ -77,6 +94,9 @@ public class PaquetDeCartesTest
 	}
 
 	@Test
+	/**
+	 * test de prendreCarte
+	 */
 	public void testPrendreCarte()
 	{
 		assertTrue(paquet2.size() == 3);
@@ -86,6 +106,9 @@ public class PaquetDeCartesTest
 	}
 
 	@Test
+	/**
+	 * test de retournerToutesLesCartes()
+	 */
 	public void testRetournerToutesLesCartes()
 	{
 		PaquetDeCartes paquetTest2 = new PaquetDeCartes();
@@ -102,6 +125,9 @@ public class PaquetDeCartesTest
 	}
 
 	@Test
+	/**
+	 * test de size()
+	 */
 	public void testSize()
 	{
 		assertEquals(paquet2.size(),3);
@@ -109,6 +135,9 @@ public class PaquetDeCartesTest
 	}
 
 	@Test
+	/**
+	 * test de isEmpty()
+	 */
 	public void testIsEmpty()
 	{
 		assertFalse(paquet2.isEmpty());
